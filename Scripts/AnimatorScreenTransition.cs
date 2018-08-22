@@ -5,6 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Use this for animating transition between scenes
 /// </summary>
+[AddComponentMenu("M8/Extension/Animator/Screen Transition")]
 public class AnimatorScreenTransition : MonoBehaviour, M8.SceneManager.ITransition {
     public M8.Animator.Animate animator;
 
