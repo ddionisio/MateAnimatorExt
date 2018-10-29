@@ -10,8 +10,9 @@ using M8.UIModal.Interface;
 [AddComponentMenu("M8/Extension/Animator/Modal Transition")]
 public class AnimatorModalTransition : MonoBehaviour, IOpening, IClosing {
     public M8.Animator.Animate animator;
-
+    [M8.Animator.TakeSelector(animatorField = "animator")]
     public string takeOpen;
+    [M8.Animator.TakeSelector(animatorField = "animator")]
     public string takeClose;
 
     IEnumerator IOpening.Opening() {
