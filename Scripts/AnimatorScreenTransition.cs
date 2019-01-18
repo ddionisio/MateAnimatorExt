@@ -11,7 +11,9 @@ public class AnimatorScreenTransition : MonoBehaviour, M8.SceneManager.ITransiti
 
     public GameObject activeGO;
 
+    [M8.Animator.TakeSelector(animatorField="animator")]
     public string takeOut;
+    [M8.Animator.TakeSelector(animatorField = "animator")]
     public string takeIn;
 
     private int mTakeOutInd;
